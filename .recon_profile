@@ -1,0 +1,22 @@
+#!/bin/bash
+
+auto(){
+	dir = ~/Recon/$1/$2;
+	mkdir -p $dir;
+}
+getsubdomain(){
+	#$1=put the directory into which recon data will be sent inside;
+	#$2 = urls to get the work done	
+	sh ~/automation/subdomain.sh $1 $2
+}
+
+getscreenshot(){
+	sh ~/automation/take_screenshot.sh $1 $2  
+}
+
+helloword(){
+	echo "hello world everything is working fine";
+}
+getdirsearch(){
+	sh ~/automation/dir.sh $1 $2
+}
